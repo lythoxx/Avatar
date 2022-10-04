@@ -1,0 +1,6 @@
+name: Avatar
+version: 1.1.0
+author: lythox
+api-version: 1.17
+main: me.lythox.avatar.Avatar
+depend: [ProjectKorra]
