@@ -130,11 +130,6 @@ public class Quicksand extends SandAbility implements AddonAbility {
                     continue;
                 }
                 LivingEntity target = (LivingEntity) entity;
-                if (this.player.getLocation().getBlock().getBiome().equals(Biome.DESERT)) {
-                    target.damage(3);
-                } else {
-                    target.damage(1.5);
-                }
                 Biome biome = this.player.getLocation().getBlock().getBiome();
                 target.damage(biome.equals(Biome.DESERT) ? 3 : 1.5);
                 target.addPotionEffect(
